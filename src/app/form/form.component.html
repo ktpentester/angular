@@ -1,0 +1,45 @@
+<p>
+  Name: <input [(ngModel)]="Name">
+  Email: <input [(ngModel)]="Email">
+</p>
+<span *ngIf="Include; then included else excluded">I am included</span>
+<ng-template #included>This was included</ng-template>
+<ng-template #excluded>This was excluded</ng-template>
+<br>
+<br>
+<button (click)= "buttonClick($event)">Click me</button>
+<br>
+<div>{{include}}</div>
+<br>
+<div>{{Name | uppercase}}"This is uppercase"==========================</div>
+<br>
+<div>==>{{Name | lowercase}}"This is lowercase"==========================<div>  
+{{todaysdate | date: 'MMM-dd-y'}}<br>
+{{colors | colorsFilter}}
+
+<div> Months :
+    <select>
+       <option *ngFor = "let i of months">{{i}}</option>
+    </select>
+ </div>
+
+ <div> years:
+    <select>
+        <option *ngFor = "let j of years">{{j}}</option>
+     </select>
+ </div>
+
+ <div> days:
+    <select>
+        <option *ngFor = "let k of days">{{k}}</option>
+     </select>
+ </div>
+ <br>
+ <div><button (click) = "myClickFunction($_event)">Click Me</button></div>
+These are created for sample pipes </div>
+ <b>{{6589.23 | currency:"USD"}}</b>
+ <br>
+ <b>{{6589.23 | currency:"INR"}}</b>
+ <div>
+ </div>
+

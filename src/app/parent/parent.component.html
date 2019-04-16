@@ -1,0 +1,9 @@
+<div>
+ parent works 
+ <!-- <app-child messageToParent="readingFromChild($event)"></app-child> -->
+ <app-child messageFromParent="How are you?" (messageFromParent)="readingFromChild($event)"></app-child>
+ 
+ message from child:{{message}}<br>
+ message from Child:{{this.message}}
+ <br>
+</div>
