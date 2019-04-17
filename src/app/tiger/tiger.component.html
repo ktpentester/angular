@@ -1,3 +1,25 @@
 <p>
-  tiger works!
-</p>
+  tiger works! Hello
+  </p>
+
+<button type="button" (click)="clickMe()">Click Me</button>
+
+<div id="myModal" class="modal" *ngIf="display">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="model-header">
+      <span class="close" (click)="clickMe()">&times;</span>
+      <h2>Modal header</h2>
+  </div>
+    <div>Label1 <input type="text"/></div>
+    <div>Label1 <input type="text"/></div>
+    <div>Label1 <input type="text"/></div>
+    <div>Label1 <input type="text"/></div>
+    <div>Label1 <input type="text"/></div>
+    <button type="button">Save me</button>
+
+  </div>
+
+</div>
+

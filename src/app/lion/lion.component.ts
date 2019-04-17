@@ -11,9 +11,7 @@ id:string;
 constructor(private route:ActivatedRoute) { 
 
 this.id=this.route.snapshot.paramMap.get("id");
-  
   }
-
   ngOnInit() {
   }
 

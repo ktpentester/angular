@@ -17,7 +17,10 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
 import { TigerComponent } from './tiger/tiger.component';
 import { LionComponent } from './lion/lion.component';
-
+import {DialogModule} from 'primeng/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
+import {MenuItem} from 'primeng/api';   
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,10 +38,11 @@ import { LionComponent } from './lion/lion.component';
     LionComponent,
   ],
   imports: [
+    AccordionModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    
+    DialogModule,BrowserAnimationsModule
   ],
   providers: [
     FoodService
